@@ -50,9 +50,6 @@ async function tester() {
 
         let signedTxn = algosdk.signTransaction(mintNFT, senderAccount.sk);
         
-  
-        console.log(signedTxn.txID)
-        console.log(signedTxn)
         let transaction = []
         let i = 0;
         while (i < signedTxn.blob.length) {
